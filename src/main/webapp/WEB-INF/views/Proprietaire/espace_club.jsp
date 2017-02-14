@@ -10,9 +10,9 @@
 </head>
 <body>
 	<h2>
-	<% 
+	<%
 		Proprietaire proprietaire;
-		if(request.getAttribute("admin") != null ){
+		if(request.getAttribute("admin") != null){
 			proprietaire = (Proprietaire) request.getAttribute("admin");
 			out.println("Bonjour " + proprietaire.getPrenom());
 		} else {

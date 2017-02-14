@@ -8,5 +8,13 @@
 </head>
 <body>
 
+	<ul>
+		<li>
+			<a href="${pageContext.request.contextPath}/club/admin_connexion">Connexion administrateur</a>
+		</li>
+		<li>
+			<a href="#">Connexion Adhérent</a>
+		</li>
+	</ul>
 </body>
 </html>
