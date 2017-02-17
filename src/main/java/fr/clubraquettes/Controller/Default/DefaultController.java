@@ -3,11 +3,13 @@ package fr.clubraquettes.Controller.Default;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
+@WebServlet("/")
 public class DefaultController extends HttpServlet{
 
 	@Override
@@ -15,7 +17,7 @@ public class DefaultController extends HttpServlet{
 	throws ServletException, IOException
 	{
 			this.getServletContext()
-			.getRequestDispatcher("/WEB-INF/index.jsp")
+			.getRequestDispatcher("/WEB-INF/views/index.jsp")
 			.forward(request, response);
 	}
 }
