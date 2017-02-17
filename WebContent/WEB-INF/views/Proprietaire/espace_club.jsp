@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h2>
-	<% 
+	<%
 		Proprietaire proprietaire;
 		if(request.getAttribute("admin") != null){
 			proprietaire = (Proprietaire) request.getAttribute("admin");
